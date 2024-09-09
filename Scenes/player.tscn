@@ -125,17 +125,17 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3mleg"]
-size = Vector2(7, 19)
+size = Vector2(7, 10)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ldhjc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_x4wom")
-animation = &"Down"
+animation = &"MovingLR"
 autoplay = "Idle"
-frame_progress = 0.66165
+frame_progress = 0.323932
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0.5)
+position = Vector2(0.5, 5)
 shape = SubResource("RectangleShape2D_3mleg")
