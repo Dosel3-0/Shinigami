@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cn3us4midwtje"]
+
+[ext_resource type="Texture2D" uid="uid://cfcebaopc405c" path="res://Assets/lights/Candles.png" id="1_v7w6k"]
+[ext_resource type="Texture2D" uid="uid://vhkfh5eqljsk" path="res://Assets/lights/textures/circle.png" id="2_ys808"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_43us2"]
+radius = 13.0384
+
+[node name="Candle" type="StaticBody2D"]
+position = Vector2(469, 289)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_43us2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_v7w6k")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+texture = ExtResource("2_ys808")
